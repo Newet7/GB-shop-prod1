@@ -1,5 +1,9 @@
 # Проект: online-store
 
+**🌐 Проект на GitHub Pages:**
+
+- [gh-pages](https://newet7.github.io/GB-shop-prod1/)
+
 ### Обзор
 
 Здесь будет проект online-store.
