@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Евгений Федосов" />
-    <title>online-store</title>
+    <title>catalog</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -51,7 +51,6 @@
 
             <div class="mobile-menu">
               <a href="registration.html" class="b_user">
-                <!-- <img class="animation-zoom" src="img/user.svg" alt="user"> -->
                 <svg
                   class="b_user-mobile"
                   viewBox="0 0 29 29"
@@ -63,7 +62,6 @@
                 </svg>
               </a>
               <a href="cart.html" class="b_cart">
-                <!-- <img class="animation-zoom" src="img/cart.svg" alt="cart"> -->
                 <svg
                   class="b_cart-mobile"
                   viewBox="0 0 32 29"
@@ -112,10 +110,10 @@
               </li>
             </ul>
           </nav>
-          <a href="registration.html" class="b_user desktop_hidden">
+          <a href="#" class="b_user desktop_hidden">
             <img class="animation-zoom" src="img/user.svg" alt="user" />
           </a>
-          <a href="cart.html" class="b_cart desktop_hidden">
+          <a href="#" class="b_cart desktop_hidden">
             <img class="animation-zoom" src="img/cart.svg" alt="cart" />
             <span class="coil">5</span>
           </a>
@@ -125,85 +123,143 @@
 
     <!--  PROMO  -->
     <section class="banner">
-      <div class="promo container">
-        <!-- <img class="banner_img" src="img/Layer_57-removebg-preview.png" alt=""> -->
-        <h1 class="banner_heading">
-          <span class="bh_bold">THE BRAND<br /></span> OF LUXERIOUS
-          <span class="pink_color">FASHION</span>
-        </h1>
+      <div class="container">
+        <div class="page_name">
+          <h1 class="page_title">NEW ARRIVALS</h1>
+          <div class="breadcrumb">
+            <a href="index.html" class="breadcrumb_link">HOME</a> /
+            <a href="#" class="breadcrumb_link">MEN</a> /
+            <span class="current_page">NEW ARRIVALS</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!--  CONTENT  -->
     <main>
       <div class="container">
-        <!--  Categories  -->
-        <section class="categories">
-          <h2 class="hidden_heading">Categories</h2>
-          <div class="category_item">
-            <div class="back_fon">
-              <p class="card_text">
-                30% OFF
-                <span class="card_text_bold">FOR WOMEN</span>
-              </p>
-            </div>
-            <picture class="card_img">
-              <source srcset="img/category_woomen.webp" type="image/webp" />
-              <img src="img/category_woomen.jpg" alt="img" class="card_img" />
-            </picture>
-          </div>
-          <div class="category_item">
-            <div class="back_fon">
-              <p class="card_text">
-                HOT DEAL
-                <span class="card_text_bold">FOR MEN</span>
-              </p>
-            </div>
-
-            <picture class="card_img">
-              <source srcset="img/category_men.webp" type="image/webp" />
-              <img src="img/category_men.jpg" alt="img" class="card_img" />
-            </picture>
-          </div>
-          <div class="category_item">
-            <div class="back_fon">
-              <p class="card_text">
-                NEW ARRIVALS
-                <span class="card_text_bold">FOR KIDS</span>
-              </p>
-            </div>
-
-            <picture class="card_img">
-              <source srcset="img/category_kids.webp" type="image/webp" />
-              <img src="img/category_kids.jpg" alt="img" class="card_img" />
-            </picture>
-          </div>
-
-          <div class="category_item category_acc">
-            <div class="back_fon">
-              <p class="card_text">
-                LUXIROUS & TRENDY
-                <span class="card_text_bold">ACCESORIES</span>
-              </p>
-            </div>
-
-            <picture class="card_img category_acc">
-              <source srcset="img/category_acc.webp" type="image/webp" />
-              <img
-                src="img/category_acc.jpg"
-                alt="img"
-                class="card_img category_acc"
-              />
-            </picture>
-          </div>
-        </section>
-
         <!--  Fetured Items  -->
         <section class="block_fetuder">
-          <h2 class="fetured_heading">Fetured Items</h2>
-          <p class="fetured_p">
-            Shop for items based on what we featured in this week
-          </p>
+          <h2 class="hidden_heading">Fetured Items</h2>
+          <div class="fetured_options">
+            <div class="filter">
+              <input type="checkbox" id="filter" />
+              <label class="filter_button" for="filter">
+                FILTER
+                <svg
+                  class="filter_ico"
+                  width="15"
+                  height="10"
+                  viewBox="0 0 15 10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                  />
+                </svg>
+              </label>
+              <div class="filter_content">
+                <div class="filter-wrap">
+                  <!-- One Filter Category -->
+                  <input
+                    class="hidden-checkbox-marker"
+                    type="checkbox"
+                    id="categories"
+                  />
+                  <label
+                    class="desing-sum desing-sum-categories"
+                    for="categories"
+                    >CATEGORIES</label
+                  >
+                  <div class="hidden-block hidden-categories">
+                    <ul class="filter_categories">
+                      <li>Accessories</li>
+                      <li>Bags</li>
+                      <li>Denim</li>
+                      <li>Hoodies & Sweatshirts</li>
+                      <li>Jackets & Coats</li>
+                      <li>Polos</li>
+                      <li>Shirts</li>
+                      <li>Shoes</li>
+                      <li>Sweaters & Knits</li>
+                      <li>T-Shirts</li>
+                      <li>Tanks</li>
+                    </ul>
+                  </div>
+                  <!-- Two Filter Category -->
+                  <input
+                    class="hidden-checkbox-marker"
+                    type="checkbox"
+                    id="brand"
+                  />
+                  <label class="desing-sum desing-sum-brand" for="brand"
+                    >BRAND</label
+                  >
+                  <div class="hidden-block hidden-brand">
+                    <ul class="filter_categories">
+                      <li>Accessories</li>
+                      <li>Bags</li>
+                      <li>Denim</li>
+                      <li>Hoodies & Sweatshirts</li>
+                      <li>Jackets & Coats</li>
+                      <li>Polos</li>
+                      <li>Shirts</li>
+                      <li>Shoes</li>
+                      <li>Sweaters & Knits</li>
+                      <li>T-Shirts</li>
+                      <li>Tanks</li>
+                    </ul>
+                  </div>
+                  <!-- Three Filter Category -->
+                  <input
+                    class="hidden-checkbox-marker"
+                    type="checkbox"
+                    id="designer"
+                  />
+                  <label class="desing-sum desing-sum-designer" for="designer"
+                    >DESIGNER</label
+                  >
+                  <div class="hidden-block hidden-designer">
+                    <ul class="filter_categories">
+                      <li>Accessories</li>
+                      <li>Bags</li>
+                      <li>Denim</li>
+                      <li>Hoodies & Sweatshirts</li>
+                      <li>Jackets & Coats</li>
+                      <li>Polos</li>
+                      <li>Shirts</li>
+                      <li>Shoes</li>
+                      <li>Sweaters & Knits</li>
+                      <li>T-Shirts</li>
+                      <li>Tanks</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fetured_sort">
+              <details class="fetured_sort_button">
+                <summary>TRENDING NOW</summary>
+                <div class="fetured_sort_button_filter"></div>
+              </details>
+              <details class="fetured_sort_button">
+                <summary>SIZE</summary>
+                <div class="fetured_sort_button_filter">
+                  <label for="xs"><input type="checkbox" id="xs" /> XS </label
+                  ><br />
+                  <label for="s"><input type="checkbox" id="s" /> S </label
+                  ><br />
+                  <label for="m"><input type="checkbox" id="m" /> M </label
+                  ><br />
+                  <label for="l"><input type="checkbox" id="l" /> L </label>
+                </div>
+              </details>
+              <details class="fetured_sort_button">
+                <summary>PRICE</summary>
+                <div class="fetured_sort_button_filter"></div>
+              </details>
+            </div>
+          </div>
           <div class="fetured_card">
             <div class="product_card">
               <div class="product_img_block">
@@ -259,9 +315,19 @@
                     Add to Cart
                   </button>
                 </div>
-                <img src="img/Image.png" alt="img" />
-                <picture class="img_product" src="img/Image.jpg" alt="img">
-                </picture>
+                <!-- <img  src="img/Image.png" alt="img"> -->
+                <video
+                  class="product_img_block_video"
+                  loop
+                  autoplay
+                  muted
+                  poster="img/Image.jpg"
+                >
+                  <source
+                    src="video/small.mp4"
+                    type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+                  />
+                </video>
               </div>
               <div class="info_product">
                 <a class="heading_product_link" href="product.html">
@@ -415,7 +481,18 @@
               </div>
             </div>
           </div>
-          <a href="catalog.html" class="b_all_product">Browse All Product</a>
+          <div class="page_nav">
+            <a href="#" class="left_arrow"></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a class="page_nav-extreme-link" href="#">6</a>
+            .....
+            <a class="page_nav-last-link" href="#">20</a>
+            <a href="#" class="right_arrow"></a>
+          </div>
         </section>
       </div>
     </main>

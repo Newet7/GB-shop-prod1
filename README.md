@@ -6,12 +6,14 @@
 
 ### Обзор
 
+Промежуточная аттестация по предмету Продвинутый HTML + CSS
+
 Здесь будет проект online-store.
 В Фигме мы разместили макет, в котором видно, как проект должен выглядеть на самых распространённых разрешениях экранов.
 
 **Figma**
 
-- [Ссылка на макет в Figma](https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?type=design&node-id=190-1194&mode=design&t=NCesz6XaimMAmdjR-0)
+- [Ссылка на макет в Figma](https://www.figma.com/file/TQaPa1gzsX6Qb4Gqj4fve7/Shop-(Copy)?type=design&node-id=0-1&mode=design&t=mYpRPClpVjrg6jvB-0)
 
 **Картинки**
 
